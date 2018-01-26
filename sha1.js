@@ -183,12 +183,13 @@ function SHA1(s) {
 }
 
 function donnerCode(form, challenge){
-    var login = form.login.value;
-    var pass = form.pass.value;
-    var sha1 = SHA1(SHA1(login) + challenge + SHA1(pass));
+    var pseudo = form.pseudo.value;
+    var password = form.password.value;
+    var sha1 = SHA1(SHA1(pseudo) + challenge + SHA1(password));
 
-    form.pass.value = "";
-    form.login.value = "";
+    form.password.value = "";
+    form.pseudo.value = "";
     form.code.value = sha1;
 }
+
 
