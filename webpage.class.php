@@ -139,7 +139,6 @@ HTML
             throw new Exception(__CLASS__ . ": title not set") ;
         }
         
-        $lastmod = strftime("Dernière modification de cette page le %d/%m/%Y à %Hh%M", getlastmod()) ;
         return <<<HTML
 <!doctype html>
 <html lang="fr">
@@ -151,20 +150,6 @@ HTML
     <body>
         <div id='page'>
 {$this->body}
-<!--
-            <div class='valid'>
-                <a href='http://w3c-validator/w3c-validator/check?uri=referer'>
-                   <img src="/css/images/valid-html401.gif"
-                        alt="Valid HTML 4.01!" height="31" width="88"></a>
-                <a href="http://wwwdoc/css-validator/check/referer">
-                   <img src="/css/images/vcss.gif"
-                        alt="Valid CSS!" height="31" width="88"></a>
-            </div>
--->
-            <span id='lastmodified'>
-                {$lastmod}
-            </span>
-        </div>
     </body>
 </html>
 HTML;
