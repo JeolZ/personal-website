@@ -1,5 +1,8 @@
 <?php
 
+// Crée par : Joël ZHU
+// Date : 26/01/2018
+
 /**
  * Classe de gestion d'une page Web permettant de s'affranchir de l'écriture de la structure de base du code HTML
  */

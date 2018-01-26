@@ -1,5 +1,8 @@
 <?php
 
+// Crée par : Joël ZHU
+// Date : 26/01/2018
+
 final class myPDO {
     /**
      * @var myPDO $_PDOInstance Instance unique.
